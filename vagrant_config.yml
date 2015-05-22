@@ -1,0 +1,22 @@
+base:
+	name: 'test-yaml'
+	box:'base-centos65'
+	box_url: 'http://box.puphpet.com/centos64-x64-vbox43.box'
+	port: 8092
+	memory: 1024
+
+dbserv:
+	memory: 2048
+
+wbserv:
+	
+dr_base:
+	memory: 2048
+
+solr:
+	memory: 1024
+	host_solr_port: 8983
+
+dr_solr:
+	memory: 4096
+	host_solr_port: 8983
