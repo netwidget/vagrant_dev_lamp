@@ -4,7 +4,7 @@ Dependencies:
 -Ruby Vagrant vagrant-vbguest (vagrant plugin for VirtualBox Guest additions). vagrant base box for CentOS 6.5 64bit VirtualBox
 
 Pre Guest VM installation:
-1. Install Ruby - if not installed.
+markup : 1. Install Ruby - if not installed.
 2. Install Vagrant
 3. Install vagrant-vbguest plugin
 ```bash
