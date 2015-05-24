@@ -4,17 +4,17 @@ Dependencies:
 -Ruby Vagrant vagrant-vbguest (vagrant plugin for VirtualBox Guest additions). vagrant base box for CentOS 6.5 64bit VirtualBox
 
 Pre Guest VM installation:
-markup : 1. Install Ruby - if not installed.
-2. Install Vagrant
-3. Install vagrant-vbguest plugin
-```bash
-$ gem install vagrant-vbguest
-```
-4. Install Vagrant base box (CentOS 6.5 64bit)
-```bash
-$ vagrant box add centos64-x64 http://box.puphpet.com/centos64-x64-vbox43.box
-```
-This will download a pre-built centOS 6.5 x64 base box with VirtualBox 4.3 Guest Additions already installed on it.
+markup :    1. Install Ruby - if not installed.
+            2. Install Vagrant
+            3. Install vagrant-vbguest plugin
+            ```bash
+            $ gem install vagrant-vbguest
+            ```
+            4. Install Vagrant base box (CentOS 6.5 64bit)
+            ```bash
+            $ vagrant box add centos64-x64 http://box.puphpet.com/centos64-x64-vbox43.box
+            ```
+                This will download a pre-built centOS 6.5 x64 base box with VirtualBox 4.3 Guest Additions already installed on it.
 
 To use NFS (on Mac):
 
