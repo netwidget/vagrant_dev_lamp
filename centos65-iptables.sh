@@ -15,7 +15,7 @@ iptables -A INPUT -p tcp -m tcp --dport 995 -j ACCEPT
 iptables -A INPUT -p tcp -m tcp --dport 143 -j ACCEPT
 iptables -A INPUT -p tcp -m tcp --dport 993 -j ACCEPT
 iptables -A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
-iptables -A INPUT -p tcp -m tcp --dport 8985 -j ACCEPT
+iptables -A INPUT -p tcp -m tcp --dport 8983 -j ACCEPT
 iptables -A INPUT -p tcp -m tcp --dport 8005 -j ACCEPT
 iptables -I INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 iptables -P OUTPUT ACCEPT
