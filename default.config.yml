@@ -1,0 +1,35 @@
+---
+hostname: "test-yaml"
+box: "base-centos65" # Vagrant base box to start build.
+url: "http://box.puphpet.com/centos64-x64-vbox43.box"
+port: 8092 # default port number to forward.
+# Synced file by default is VirtualBox GuestAdditions.
+# If NFS is desired in lieu of GuetsAdditions change to nfs: true
+nfs: false
+# Uncomment the type of server to build from the list below:
+type: base
+# type: dbserv
+# type: wbserv
+# type: dr_base
+# type: solr
+# type: dr_solr
+
+base:
+    memory: 1024
+
+dbserv:
+    memory: 2048
+
+wbserv:
+    memory: 2048
+
+drbase:
+    memory: 2048
+
+solr:
+    memory: 1024
+    host_solr_port: 8983
+
+drsolr:
+    memory: 4096
+    host_solr_port: 8983
