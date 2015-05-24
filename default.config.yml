@@ -1,18 +1,36 @@
 ---
-hostname: "test-yaml"
+# Rename this file to config.yml.
+# Basic configuration settings for all server types.
+hostname: "default" # Change to match desire hostname of server.
 box: "base-centos65" # Vagrant base box to start build.
 url: "http://box.puphpet.com/centos64-x64-vbox43.box"
 port: 8092 # default port number to forward.
 # Synced file by default is VirtualBox GuestAdditions.
 # If NFS is desired in lieu of GuetsAdditions change to nfs: true
 nfs: false
-# Uncomment the type of server to build from the list below:
+
+# --- SERVER TYPES ---
+# The default server type selected is "base".  To provision a 
+# different server, comment out the "type: base" line below and
+# and uncomment the desired server type.
 type: base
-# type: dbserv
-# type: wbserv
-# type: dr_base
-# type: solr
-# type: dr_solr
+# For basic MySQL database server uncomment the line below:
+#type: dbserv
+
+# For basic web server with (Apache and PHP only) uncomment below:
+#type: wbserv
+
+# For full LAMP server (Linux, Apache, MySQL, PHP) uncomment below:
+#type: lamp
+
+# For LAMP server configured for Drupal uncomment below:
+#type: drbase
+
+# For Apache Solr server running on Tomcat, uncomment below:
+#type: solr
+
+# For LAMP server wiht Drupal with an Apache Solr server uncomment below.
+#type: drsolr
 
 base:
     memory: 1024
@@ -22,6 +40,9 @@ dbserv:
 
 wbserv:
     memory: 2048
+
+lamp:
+    memory: 1024
 
 drbase:
     memory: 2048
