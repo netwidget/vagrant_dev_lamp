@@ -5,29 +5,27 @@
 
 ### Pre Guest VM installation
 1. Install Ruby - if not installed.
-2. Install Vagrant
+2. Install Vagrant - Download from https://www.vagrantup.com/downloads.html
 3. Install vagrant-vbguest plugin
 ```bash
 $ gem install vagrant-vbguest
-
+```
 ### Directory setup.
 The recommended directory structure is:
 I place the git repo for the server build in a separate subfolder under the projcet name so that the web applicaiton can be versioned separately.  But is in the same project directory so that I can backup the whole project at once as needed.  
 
 To accomplish this:
 1. Make the directory structure up to:
-
 ```bash
-$ mkdir -p home/sitedev/[proj_name]/server
+$ mkdir -P home/sitedev/[proj_name]/server
 # If you have a existing git repo for the app then clone it adding docroot at the end
-$ mkdir -p home/sitedev/[proj_name]/dev
+$ mkdir -P home/sitedev/[proj_name]/dev
 # OR if this is a new project and you plan on running git init on it
-$ mkdir -p home/sitedev/[proj_name]/dev/docroot
+$ mkdir -P home/sitedev/[proj_name]/dev/docroot
 ```
-
 2. Clone the repo with the following command:
 ```bash
-$ git clone https://github.com/netwidget/vagrant_dev_lamp.git vagrant
+git clone https://github.com/netwidget/vagrant_dev_lamp.git vagrant
 ```
 3. Locate all website code and files in this file path:
   home/sitedev/[proj_name]/dev/docroot/
