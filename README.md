@@ -16,16 +16,18 @@ I place the git repo for the server build in a separate subfolder under the proj
 
 To accomplish this:
 1. Make the directory structure up to:
+
 ```bash
-$ mkdir -P home/sitedev/[proj_name]/server
+$ mkdir -p home/sitedev/[proj_name]/server
 # If you have a existing git repo for the app then clone it adding docroot at the end
-$ mkdir -P home/sitedev/[proj_name]/dev
+$ mkdir -p home/sitedev/[proj_name]/dev
 # OR if this is a new project and you plan on running git init on it
-$ mkdir -P home/sitedev/[proj_name]/dev/docroot
+$ mkdir -p home/sitedev/[proj_name]/dev/docroot
 ```
+
 2. Clone the repo with the following command:
 ```bash
-git clone https://github.com/netwidget/vagrant_dev_lamp.git vagrant
+$ git clone https://github.com/netwidget/vagrant_dev_lamp.git vagrant
 ```
 3. Locate all website code and files in this file path:
   home/sitedev/[proj_name]/dev/docroot/
